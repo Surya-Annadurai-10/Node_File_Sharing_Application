@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+           width: 100%;
+           height: 100vh;
+           background-color: aliceblue;
+           display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div{
+            width: 400px;
+            height: 30%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            padding: 1rem;
+            border-radius: 10px;
+            background-color: rgb(184, 214, 240);
+        }
+
+        h1{
+            font-size: 2rem;
+        }
+
+        button{
+            width: 90%;
+            height: 30px;
+            background-color: rgb(85, 110, 223);
+            border-radius: 1rem;
+            border: none;
+            color: white;
+        }
+
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 1rem;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <h1>File Sharing Application</h1>
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <input type="file" name="data_file">
+                <button>Upload</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
